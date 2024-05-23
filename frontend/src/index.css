@@ -1,0 +1,96 @@
+:root{
+  --primary:rgb(129, 19, 11);
+  --error:rgb(227, 84, 84);
+}
+body{
+  background: wheat;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px;
+}
+
+header{
+  background-color: rgb(43, 4, 4);
+  height: 60px;
+  display: flex;
+  
+}
+
+header.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a{
+  color: white;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.home{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details{
+  background: rgb(201, 78, 78);
+  color: bisque;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.workout-details h4{
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #000;
+}
+.workout-details strong{
+  font-weight: bold;
+}
+.workout-details p{
+  margin: 0;
+  font-size: 0.9rem;
+}
+.workout-details span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 6px;
+  /* background-color: rgb(190, 118, 23);
+  border-radius: 50%;
+  color: black; */
+}
+
+label, input{
+  display: block;
+}
+input{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid brown;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+form button{
+  background: var(--primary);
+  border: 0;
+  color:bisque;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
